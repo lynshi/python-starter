@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Change these parameter values.
+# Change these parameter values for your project.
 MAIN="main.py"
 PACKAGES="sample"
-REQUIRED_CODE_COVERAGE=100
+MINIMUM_CODE_COVERAGE=100
 UNIT_TEST_DIRECTORY="test"
 
 # For coloring terminal output.
@@ -25,12 +25,12 @@ report=$(coverage report)
 coverage=${report: -4}
 coverage="${coverage//\%/}"
 coverage="${coverage//\ /}"
-if [ $coverage -lt $REQUIRED_CODE_COVERAGE ]
+if [ $coverage -lt $MINIMUM_CODE_COVERAGE ]
 then
-    echo -e "${RED}Insufficient code coverage: ${coverage}% / ${REQUIRED_CODE_COVERAGE}%${NC}"
+    echo -e "${RED}Insufficient code coverage: ${coverage}% / ${MINIMUM_CODE_COVERAGE}%${NC}"
     exit 1
 fi
-echo -e "${GREEN}Sufficient code coverage (${coverage}% / ${REQUIRED_CODE_COVERAGE}%)!${NC}"
+echo -e "${GREEN}Sufficient code coverage (${coverage}% / ${MINIMUM_CODE_COVERAGE}%)!${NC}"
 
 echo -e "${BLUE}Static type check with pyright...${NC}"
 pyright
