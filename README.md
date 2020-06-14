@@ -1,5 +1,5 @@
 # python-starter
-[![codecov](https://codecov.io/gh/lynshi/python-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/lynshi/python-starter)
+[![codecov](https://codecov.io/gh/lynshi/python-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/lynshi/python-starter) ![build](https://github.com/lynshi/python-starter/workflows/build/badge.svg)
 
 This is a starter template for Python projects that includes a Dockerfile, a script `checks.sh` for running tests and verifying code quality and style, and a GitHub Action for running checks and publishing coverage results to [Codecov](https://codecov.io/). It is targeted for Linux/Mac; if you are on Windows, please use [WSL](https://docs.microsoft.com/en-us/windows/wsl/).
 
