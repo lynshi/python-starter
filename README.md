@@ -13,7 +13,7 @@ This is a starter template for Python projects that includes a Dockerfile, a scr
 1. [`npm`](https://www.npmjs.com/) is required to install `pyright`. I recommend using [`nvm`](https://github.com/nvm-sh/nvm#install--update-script) to install `node`.
 
 # Quickstart
-1. [Download]((https://github.com/lynshi/python-starter/archive/master.zip)) and unpack a zip of this repository.
+1. [Download](https://github.com/lynshi/python-starter/archive/master.zip) and unpack a zip of this repository.
 2. Rename `sample` and `test/sample` appropriately for your project.
 3. Create a `virtualenv` for the Python project. [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/) is a nice tool for managing virtual environments.
 4. Activate the `virtualenv` (if you have created the `virtualenv` in your previous command, it should automatically be activated).
