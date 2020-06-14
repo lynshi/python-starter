@@ -7,7 +7,7 @@ This is a starter template for Python projects that includes a Dockerfile, a scr
 1. Runs unit tests and generates a code coverage report with [`pytest`](https://docs.pytest.org/en/latest/) and [`coverage`](https://coverage.readthedocs.io/en/coverage-5.1/).
 2. Performs static type checking with [`pyright`](https://github.com/Microsoft/pyright).
 3. Formats code with [`black`](https://github.com/psf/black).
-4. Lint code with [`pylint`](https://github.com/PyCQA/pylint).
+4. Lints code with [`pylint`](https://github.com/PyCQA/pylint).
 
 # Prerequisites
 1. [`npm`](https://www.npmjs.com/) is required to install `pyright`. I recommend using [`nvm`](https://github.com/nvm-sh/nvm#install--update-script) to install `node`.
