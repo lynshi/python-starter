@@ -1,4 +1,4 @@
-name: Sample GitHub Action for python-starter
+name: Run checks
 
 on: [push]
 
@@ -30,3 +30,6 @@ jobs:
     - name: Run checks script.
       run: |
         ./checks.sh
+    - name: Publish code coverage.
+      uses: codecov/codecov-action@v1
+      
