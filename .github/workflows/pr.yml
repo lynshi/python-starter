@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r test.requirements.txt
+        pip install -r requirements.txt
     - name: Set up npm to install pyright.
       uses: actions/setup-node@v2-beta
       with:
@@ -34,7 +34,6 @@ jobs:
     - name: Run checks script and generate coverage report.
       run: |
         ./checks.sh
-        black __app__ test --check
         coverage xml
     - name: Publish code coverage.
       uses: codecov/codecov-action@v1
