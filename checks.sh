@@ -41,9 +41,9 @@ then
 fi
 echo -e "${GREEN}Static type check passed!${NC}"
 
-echo -e "${BLUE}Formatting code with black...${NC}"
-black $PACKAGES $MAIN $UNIT_TEST_DIRECTORY
-echo -e "${GREEN}Done formatting code!${NC}"
+echo -e "${BLUE}Verifying code format with black...${NC}"
+black --check $PACKAGES $MAIN $UNIT_TEST_DIRECTORY
+echo -e "${GREEN}Done code format!${NC}"
 
 echo -e "${BLUE}Linting source with pylint...${NC}"
 pylint $PACKAGES $MAIN
