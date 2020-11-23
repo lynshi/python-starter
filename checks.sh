@@ -43,7 +43,13 @@ echo -e "${GREEN}Static type check passed!${NC}"
 
 echo -e "${BLUE}Verifying code format with black...${NC}"
 black --check $PACKAGES $MAIN $UNIT_TEST_DIRECTORY
-echo -e "${GREEN}Done code format!${NC}"
+if [ $? -ne 0 ]
+then
+    echo -e "${RED}Code format not up to par.${NC}"
+    exit 1
+fi
+
+echo -e "${GREEN}Done verifying code format!${NC}"
 
 echo -e "${BLUE}Linting source with pylint...${NC}"
 pylint $PACKAGES $MAIN
