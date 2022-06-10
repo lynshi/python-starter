@@ -4,7 +4,7 @@
 MAIN="main.py"
 PACKAGES="sample"
 MINIMUM_CODE_COVERAGE=100
-UNIT_TEST_DIRECTORY="test"
+UNIT_TEST_DIRECTORY="tests"
 
 # For coloring terminal output.
 RED='\033[0;31m'
