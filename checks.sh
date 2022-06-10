@@ -69,4 +69,4 @@ fi
 
 echo -e "${GREEN}Linting done!${NC}"
 
-echo -e "All checks passed! :)"
+echo -e "${GREEN}All checks passed! :)${NC}"
