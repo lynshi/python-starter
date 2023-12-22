@@ -1,5 +1,5 @@
 {
   "include": [
-    "sample", "tests", "main.py"
+    "sample", "test", "main.py"
   ]
 }
